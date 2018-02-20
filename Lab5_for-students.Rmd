@@ -28,15 +28,15 @@ knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 ![Wang, Z., Gerstein, M., & Snyder, M. (2009). RNA-Seq: a revolutionary tool for transcriptomics. Nature reviews genetics, 10(1), 57.](img/rna_seq.png)
 
 ## Fragment alignment
-- [https://academic.oup.com/bioinformatics/article/29/1/15/272537](Star: ultrafast universal RNA-seq aligner)
+- [Star: ultrafast universal RNA-seq aligner](https://academic.oup.com/bioinformatics/article/29/1/15/272537)
     - Suffix array (SA) approach to leverage speed of binary searching
     - Requires an index (the SA) to be created prior to aligning
 
-- [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5600148/](Salmon: fast and bias-aware quantification of transcript expression using dual-phase inference)
+- [Salmon: fast and bias-aware quantification of transcript expression using dual-phase inference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5600148/)
     - Pseudo-alignment concept to rapidly align reads
     - Reads are classified according to their *fragment equivalence class* 
     - (Optionally) removes sequencing biases and computes coverage via likelihood maximization
-    - Similar in concept and result to [https://www.nature.com/articles/nbt.3519](Near-optimal probabilistic RNA-seq quantification)
+    - Similar in concept and result to [Near-optimal probabilistic RNA-seq quantification](https://www.nature.com/articles/nbt.3519)
     
 ## Star alignment
 - Needs to be run on Odyssey HPC
@@ -118,7 +118,7 @@ files <- grep("sf",list.files("data"),value=TRUE)
 ## Differential expression
 - Utilizing the mouse transcriptome as below, extract the transcript id columns and the gene id columns.
 ```{r,message=FALSE}
-library(EnsDb.Mmusculus.v79,)
+library(EnsDb.Mmusculus.v79)
 
 ```
 
