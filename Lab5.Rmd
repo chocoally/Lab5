@@ -51,7 +51,7 @@ knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 #SBATCH --contiguous    #Cores on same infiniband switch
 #SBATCH --mem=50000    #Total memory
 #SBATCH --mail-type=END # Email
-#SBATCH --mail-user=YOUR_EMAIL
+#SBATCH --mail-user=awang@bwh.harvard.edu
 
 module load gcc/4.8.2-fasrc01 STAR/2.5.0c-fasrc02
 
